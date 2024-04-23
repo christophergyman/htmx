@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev-chrisgyman</title>
+    <!--<link href="static/styles/style.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="content-boundry">
+        <header>
+            <h1>dev-chrisgyman</h1>
+            <!-- You can add navigation links or any other content you want in your header -->
+          </header>
+
+          <p class="italic">
+        🚀 passionate about programming | 💻 code enthusiast | 🌟 fullstack developer 
+          </p>
+
+        <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+
+        <button hx-get="/convert_markdown" hx-swap="outerHTML", hx-trigger="load"></button>
+
+          <footer>
+            <br>
+            <!-- Footer content goes here -->
+            <p>&copy; 2024 dev-chrisgyman. All rights reserved.</p>
+          </footer>
+      
+          <!-- You can link JavaScript files here if needed -->
+          <script src="script.js"></script>
+        </body>
+    </div>
+
+</html>
